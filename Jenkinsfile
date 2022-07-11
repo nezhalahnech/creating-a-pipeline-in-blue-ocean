@@ -19,11 +19,5 @@ pipeline {
       }
     }
 
-    stage('limpieza') {
-      steps {
-        sh './jenkins/scripts/kill.sh'
-      }
-    }
-
   }
 }
