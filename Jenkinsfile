@@ -19,9 +19,15 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
         input 'Finished using the web site? (Click "Proceed" to continue)'
+      }
+    }
+
+    stage('limpieza') {
+      steps {
+        sh './jenkins/scripts/kill.sh'
       }
     }
 
