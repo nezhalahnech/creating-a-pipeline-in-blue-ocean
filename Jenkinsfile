@@ -19,11 +19,5 @@ pipeline {
       }
     }
 
-    stage('error') {
-      steps {
-        input 'Finished using the web site? (Click "Proceed" to continue)'
-      }
-    }
-
   }
 }
