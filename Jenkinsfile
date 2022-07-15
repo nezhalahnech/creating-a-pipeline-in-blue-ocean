@@ -19,7 +19,7 @@ pipeline {
       }
     }
 
-    stage('error') {
+    stage('Comprobación manual') {
       steps {
         input 'Finished using the web site? (Click "Proceed" to continue)'
       }
